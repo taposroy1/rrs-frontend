@@ -4,7 +4,7 @@ const MenuBar = () => {
     return (
         <nav className='flex justify-between p-5 rounded-sm shadow-md'>
           <div className='flex'>
-            <h4 className='text-2xl mr-10 drop-shadow-2xl'><Link to="/">GIVE ME REST</Link></h4>
+            <h4 className='text-2xl mr-10 drop-shadow-2xl'><Link to="/">GET REST</Link></h4>
             <ul className='flex gap-6 pt-1'>
               <li><Link to="/about">About Us</Link></li>
               <li><Link to="/contact">Contact Us</Link></li>
