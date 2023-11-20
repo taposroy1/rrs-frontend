@@ -1,13 +1,15 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import { IoFastFoodSharp } from "react-icons/io5";
+import { IoIosSearch } from "react-icons/io";
 const MenuBar = () => {
     return (
-        <nav className='flex justify-between p-5 rounded-sm shadow-md'>
+        <nav className='flex justify-between rounded-sm shadow-sm shadow-green-300 pt-5 pb-5 ps-24 pe-24'>
           <div className='flex'>
-            <h4 className='text-2xl mr-10 drop-shadow-2xl'><Link to="/">GET REST</Link></h4>
+            <h4 className='text-4xl font-bold mr-10 drop-shadow-xl'><Link className='flex gap-2' to="/"> <IoFastFoodSharp className='text-4xl text-green-400' />GET REST</Link></h4>
             <ul className='flex gap-6 pt-1'>
-              <li><Link to="/about">About Us</Link></li>
-              <li><Link to="/contact">Contact Us</Link></li>
+              <li><Link className='p-2 rounded hover:text-white hover:bg-green-400' to="/about">About Us</Link></li>
+              <li><Link className='p-2 rounded hover:text-white hover:bg-green-400' to="/contact">Contact Us</Link></li>
             </ul>
           </div>
           <div className='flex gap-5 me-6'>
@@ -15,11 +17,11 @@ const MenuBar = () => {
               type="search"
               name="search"
               id=""
-              placeholder="Search here"
+              placeholder= "Search here"
               autoComplete="off"
-              className="p-3 border border-gray-400 text-sm rounded-lg outline-none w-full lg:w-[25vw]"
+              className="p-3 border border-green-400 text-sm rounded-lg outline-none w-full lg:w-[25vw] h-10 placeholder:"
             />
-            <Link className='pt-2' to="/login">Login</Link>
+            <Link className='p-2 rounded hover:text-white hover:bg-green-400' to="/login">Login</Link>
           </div>
       </nav>
       
