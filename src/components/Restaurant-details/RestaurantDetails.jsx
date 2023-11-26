@@ -8,15 +8,14 @@ const RestaurantDetails = () => {
     return (
         <div>
             <h2 className='pl-20 pt-6 text-[20px]'>Restaurant Details </h2>
-            <div className="grid grid-cols-2  ">
+            <div className="grid grid-cols-1  ">
                 <div className='pt-3 pl-20 pb-6'>
                     <RestaurantDetailsSlider/>
                 </div>
 
                 <div className=''>
                     <div className=' pl-20'>
-                        <AdultsBooking/>
-                        <ChildrenBooking/>
+
                     </div>
                     {/*<GoogleMapSlider/>*/}
                 </div>

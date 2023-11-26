@@ -1,6 +1,7 @@
 import React from 'react';
 import MenuBar from '../Navbar/MenuBar';
-import Footer from '../Navbar/Footer';
+import Footer from "../Footer/Footer.jsx";
+
 
 const Master = (props) => {
     return (
