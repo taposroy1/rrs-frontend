@@ -1,6 +1,7 @@
 import Popup from './Popup.jsx'
-import {useState} from "react";
+import React, {useState} from "react";
 import './ReserveYourTable.css'
+import img1 from "../../assets/RestaurantDetailsImage/imag1.jpg";
 
 const RestaurantNameTabel = () => {
     const [buttonPopup, setButtonPopup]= useState(false)
@@ -9,10 +10,19 @@ const RestaurantNameTabel = () => {
         <div>
             <div className='grid grid-cols-2 '>
                 <div className='pl-20 pb-10'>
-                    <h1 className=' text-[20px]'> Restaurant name</h1>
-                    <h1 > Address :<span className='text-[13px] pl-2'>Taj East Gate Road, Taj Ganj, Agra, Uttar Pradesh, 282004, India </span> </h1>
+                       <div className='grid grid-cols-2'>
+                         <div className='max-w-50'>
+                             <img className='rounded-xl ' src={img1} alt=''/>
+                         </div>
+                         <div className='restaurantName'>
+                             <h2 className='text-[25px]'>790 on the Gulf Restaurant</h2>
+                             <p className='text-[13px]'>14073 Emerald Coast Pkwy, , Destin Florida
+                                 Seafood • Casual Dining • $$ </p>
+                         </div>
 
-                    <h1 > Description : </h1>
+                       </div>
+
+                    <h1 className='mt-10 text-[25px]' > Description : </h1>
                     <p className=' text-[13px]'>
                         Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar
                     </p>
