@@ -8,7 +8,7 @@ const RestaurantDetailsPage = () => {
         <div>
             <Master>
               <RestaurantDetails/>
-                <RestaurantNameTabel/>
+              <RestaurantNameTabel/>
             </Master>
         </div>
     );

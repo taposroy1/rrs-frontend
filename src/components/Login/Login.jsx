@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { UserLoginRequest} from "../../api/apiRequest";
-import {useNavigate} from "react-router-dom"
+import {Link, useNavigate} from "react-router-dom"
 import toast, { Toaster } from 'react-hot-toast';
 
 const Login = () => {
@@ -41,7 +41,9 @@ const Login = () => {
                         autoComplete='off' />
                 <label htmlFor='password'>Password</label>
                 <input className='rounded h-10 border border-green-200 outline-none p-2 mb-5' type="text" text="Password" name='password' />
-                <button submit={BtnLoader} onClick={LoginEmail} className="p-3 text-white bg-green-400 hover:bg-green-600 rounded-lg text-lg mt-5" >Login</button>
+                <button submit={BtnLoader} onClick={LoginEmail} className="p-3 text-white bg-green-400 hover:bg-green-600 rounded-lg text-lg mt-5" >
+                    <Link to={'http://localhost:5173/owner'} >Login</Link>
+                </button>
             </div>
         </div> 
         <Toaster position={"bottom-center"} />

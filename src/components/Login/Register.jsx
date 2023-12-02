@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { UserRegistrationRequest} from "../../api/apiRequest";
-import {useNavigate} from "react-router-dom"
+import {Link, useNavigate} from "react-router-dom"
 import toast, { Toaster } from 'react-hot-toast';
 import SubmitButton from "../SubmitButton";
 
@@ -99,6 +99,7 @@ const Register = () => {
                 </div>
             </div> 
             <Toaster position={"bottom-center"} />
+
         </>
         
     );

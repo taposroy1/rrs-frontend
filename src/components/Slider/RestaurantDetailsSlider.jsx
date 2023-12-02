@@ -32,7 +32,7 @@ const RestaurantDetailsSlider = () => {
         >
             {images.map((image, index)=>(
                 <SwiperSlide key={index}>
-                    <img src={image.img} className="w-[100vw] h-[60vh]" alt=''/>
+                    <img src={image.img} className="w-[90vw] h-[60vh] mx-auto" alt=''/>
                 </SwiperSlide>
             ))}
 

@@ -1,6 +1,7 @@
 import Popup from './Popup.jsx'
 import React, {useState} from "react";
 import './ReserveYourTable.css'
+import '../../Css/Owner Css/owner.css'
 import img1 from "../../assets/RestaurantDetailsImage/imag1.jpg";
 
 const RestaurantNameTabel = () => {
@@ -61,11 +62,11 @@ const RestaurantNameTabel = () => {
 
                 </div>
             </div>
-            <div className='text-center pb-20'>
+            <div className='text-center pb-20 '>
 
               <button onClick={()=>setButtonPopup(true)}>Reserve your Table</button>
                 <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
-                    <div className='reserveYourTable'>
+                    <div className='reserveYourTable w-[800px] h-[400px]'>
                       <form>
                           <div className='popupTable'>
                               <div className='grid grid-cols-2 '>
@@ -90,7 +91,7 @@ const RestaurantNameTabel = () => {
                                          </div><br/>
                                          <div className='grid grid-cols-3'>
                                              <div>Guests:</div>
-                                             <div><input type='type' className='with'/></div>
+                                             <div><input type='number'  className='with'/></div>
                                              <div></div>
 
                                          </div>
@@ -99,9 +100,10 @@ const RestaurantNameTabel = () => {
                                      </div>
                                  </div>
 
+
                                  <div>
                                      <div >
-                                         <table className="table-auto border border-amber-800 text-center w-80 pt-6">
+                                         <table className="table-auto border border-amber-800 text-center w-80 pt-6 p-20 h-64">
                                              <thead className='border border-amber-800 '>
                                              <tr >
                                                  <th>Available Tables</th>
