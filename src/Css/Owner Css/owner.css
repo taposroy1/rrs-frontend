@@ -50,10 +50,15 @@ main{
 .icon, .link_text{
     font-size: 20px;
 }
-
-input {
-    height: 36px;
-    border-radius: 6px;
-    border-color: #c45f5f;
-    border: 1px solid #937d7d;
+.Buttom-senter {
+    position: relative;
+    top: -58px;
+    left: 49px;
+    padding: 9px 50px;
 }
+/*input {*/
+/*    height: 36px;*/
+/*    border-radius: 6px;*/
+/*    border-color: #c45f5f;*/
+/*    border: 1px solid #937d7d;*/
+/*}*/

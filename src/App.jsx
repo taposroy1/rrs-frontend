@@ -8,6 +8,7 @@ import Owner from "./pages/owner.jsx";
 import ProfileSetup from "./components/RestaurantOwner/ProfileSetup.jsx";
 import Branch from "./components/RestaurantOwner/Branch.jsx";
 import RestaurantDetails from "./components/Restaurant-details/RestaurantDetails.jsx";
+import Gallery from "./components/RestaurantOwner/Gallery.jsx";
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <Route path="/reservation" element={<Reservation/>} />
         <Route path="/profileSetup" element={<ProfileSetup/>} />
         <Route path="/branch" element={<Branch/>} />
+        <Route path="/gallery" element={<Gallery/>} />
 
       </Routes>
     </BrowserRouter>

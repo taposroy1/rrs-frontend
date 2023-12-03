@@ -3,13 +3,11 @@ import { VscReport } from "react-icons/vsc";
 import {RxDashboard} from "react-icons/rx";
 import { FaUserCircle } from "react-icons/fa";
 import { FaCodeBranch } from "react-icons/fa6";
+import { GrGallery } from "react-icons/gr";
 import {
     FaTh,
     FaBars,
     FaUserAlt,
-    FaRegChartBar,
-    FaCommentAlt,
-    FaShoppingBag,
     FaThList,
 }from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
@@ -44,10 +42,16 @@ const Owner = ({children}) => {
             path:"/profileSetup",
             name:"Profile",
             icon:<FaUserCircle/>
-        },{
+        },
+        {
             path:"/branch",
             name:"Branch",
             icon:<FaCodeBranch/>
+        },
+        {
+            path:"/gallery",
+            name:"Gallery",
+            icon:<GrGallery/>
         },
         {
             path:"/setup Table",
