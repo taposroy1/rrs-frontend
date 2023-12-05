@@ -19,9 +19,9 @@ const Owner = ({children}) => {
     const toggle = () => setIsOpen (!isOpen);
     const menuItem=[
         {
-            path:"/",
+            path:"/dashboard",
             name:"Dashboard",
-            icon:<RxDashboard />
+            icon:<RxDashboard/>
         },
         {
             path:"/reservation",
@@ -81,7 +81,10 @@ const Owner = ({children}) => {
                         </NavLink>
                     ))
                 }
+                <span className='mt-96'>Logout</span>
+
             </div>
+
             <main>{children}</main>
 
         </div>

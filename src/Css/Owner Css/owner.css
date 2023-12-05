@@ -12,8 +12,8 @@ main{
     padding: 20px;
 }
 .sidebar{
-    background: #dadada;
-    color: #050505;
+    background: #0D0B2A;
+    color: #ffffff;
     height: 200vh;
     width: 200px;
     transition: all 0.5s;
@@ -33,7 +33,7 @@ main{
 }
 .link{
     display: flex;
-    color: #050505;
+    color: #ffffff;
     padding: 10px 15px;
     gap: 15px;
     transition: all 0.5s;
@@ -62,3 +62,8 @@ main{
 /*    border-color: #c45f5f;*/
 /*    border: 1px solid #937d7d;*/
 /*}*/
+
+main {
+
+    margin-right: -74px;
+}

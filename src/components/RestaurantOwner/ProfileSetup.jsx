@@ -8,9 +8,9 @@ import '../../Css/Owner Css/owner.css'
 
 const ProfileSetup = () => {
     return (
-        <div>
+        <div className='bg-[#0D0B2A]'>
             <Owner>
-             <form className='w-[1050px]  bg-green-300 pb-20 pt-20 pl-60 '>
+             <form className='w-[1050px]  bg-[#161B3B] text-white rounded-lg pb-20 pt-20 pl-60 '>
                  <label >Restaurant Name: </label>
                  <input/><br/><br/>
                   <div className='grid grid-cols-4 gap-4'>

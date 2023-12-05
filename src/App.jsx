@@ -9,6 +9,10 @@ import ProfileSetup from "./components/RestaurantOwner/ProfileSetup.jsx";
 import Branch from "./components/RestaurantOwner/Branch.jsx";
 import RestaurantDetails from "./components/Restaurant-details/RestaurantDetails.jsx";
 import Gallery from "./components/RestaurantOwner/Gallery.jsx";
+import Dashboard from "./components/RestaurantOwner/Dashboard.jsx";
+import Menus from "./components/RestaurantOwner/Menus.jsx";
+import Reports from "./components/RestaurantOwner/Reports.jsx";
+import SetupTable from "./components/RestaurantOwner/SetupTable.jsx";
 
 
 function App() {
@@ -25,11 +29,15 @@ function App() {
 
         //RestaurantOwnerPage
         <Route path="/owner" element={<Owner/>} />
-
+        <Route path="/dashboard" element={<Dashboard/>} />
+        <Route path="/menus" element={<Menus/>} />
+        <Route path="/reports" element={<Reports/>} />
         <Route path="/reservation" element={<Reservation/>} />
         <Route path="/profileSetup" element={<ProfileSetup/>} />
         <Route path="/branch" element={<Branch/>} />
         <Route path="/gallery" element={<Gallery/>} />
+        <Route path="/setup Table" element={<SetupTable/>} />
+
 
       </Routes>
     </BrowserRouter>

@@ -1,27 +1,29 @@
 import React from 'react';
 import Owner from "../../pages/owner.jsx";
+import OwnerNavbar from "../Navbar/OwnerNavbar.jsx";
 
 const Reservation = () => {
     return (
-      <div>
+      <div  className='bg-[#0D0B2A]'>
+
           <Owner>
 
               <form>
-                  <div className="grid gap-6 mb-6 md:grid-cols-2 p-10">
+                  <div className="grid gap-6 mb-6 md:grid-cols-2 p-10 text-white bg-[#161B3B] rounded-lg">
                       <div>
-                          <label  className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Branch Name</label>
+                          <label  className="block mb-2 text-sm font-medium text-gray-900 text-white">Branch Name</label>
                           <input type="text" id="first_name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Branch Name" required />
                       </div>
                       <div>
-                          <label htmlFor="last_name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Request Date</label>
+                          <label htmlFor="last_name" className="block mb-2 text-sm font-medium text-gray-900 text-white">Request Date</label>
                           <input type="date" id="last_name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"  required />
                       </div>
                       <div>
-                          <label htmlFor="company" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Status:</label>
+                          <label htmlFor="company" className="block mb-2 text-sm font-medium text-gray-900text-white">Status:</label>
                           <input type="text" id="company" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Status:" required />
                       </div>
                       <div>
-                          <label htmlFor="phone" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Reserve Date</label>
+                          <label htmlFor="phone" className="block mb-2 text-sm font-medium text-gray-900 text-white">Reserve Date</label>
                           <input type="date" id="" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required />
                       </div>
 
@@ -29,7 +31,7 @@ const Reservation = () => {
 
               </form>
 
-              <div className="relative overflow-x-auto shadow-md ">
+              <div className="relative overflow-x-auto shadow-md  ">
                   <table className="w-full text-sm  text-gray-500 ">
                       <thead className="text-xs text-white uppercase  bg-amber-600 ">
                       <tr>
@@ -62,7 +64,7 @@ const Reservation = () => {
                           </th>
                       </tr>
                       </thead>
-                      <tbody>
+                      <tbody className='bg-[#161B3B]'>
                       <tr className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
                           <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                               25-11-2023
@@ -214,6 +216,7 @@ const Reservation = () => {
 
 
           </Owner>
+
 
       </div>
     );
