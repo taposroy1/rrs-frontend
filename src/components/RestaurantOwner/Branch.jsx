@@ -4,13 +4,13 @@ import img1 from '../../assets/RestaurantDetailsImage/imag1.jpg'
 
 const Branch = () => {
     return (
-        <div>
+        <div className='bg-[#0D0B2A]'>
             <Owner>
 
-                <form className='bg-blue-200'>
+                <form className='bg-blue-200 bg-[#161B3B] text-white mb-3 rounded-lg'>
                     <div className="grid gap-6 mb-6 md:grid-cols-2 p-10">
                         <div>
-                            <label  className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Branch Name</label>
+                            <label  className="block mb-2 text-sm font-medium text-gray-900 text-white">Branch Name</label>
                             <input type="text" id="first_name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Branch Name" required />
                         </div>
                         <div>
@@ -19,19 +19,19 @@ const Branch = () => {
                             <input type='file'/>
                         </div>
                         <div>
-                            <label htmlFor="number" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Mobile No:</label>
+                            <label htmlFor="number" className="block mb-2 text-sm font-medium text-gray-900 text-white">Mobile No:</label>
                             <input type="number" id="company" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="number:" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required />
                         </div>
                         <div>
-                            <label htmlFor="type" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Type:</label>
+                            <label htmlFor="type" className="block mb-2 text-sm font-medium text-gray-900 text-white">Type:</label>
                             <input type="type" id="" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Type"  required />
                         </div>
                         <div>
-                            <label htmlFor="Detail Address:" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Detail Address:</label>
+                            <label htmlFor="Detail Address:" className="block mb-2 text-sm font-medium text-gray-900 text-white">Detail Address:</label>
                             <input type="type" id="" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Detail Address "  required />
                         </div>
                         <div>
-                            <label htmlFor="Area:" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Area:</label>
+                            <label htmlFor="Area:" className="block mb-2 text-sm font-medium text-gray-900 text-white">Area:</label>
                             <select id="countries" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                                 <option selected>Choose Your Area</option>
                                 <option selected>Branch One</option>
@@ -43,15 +43,15 @@ const Branch = () => {
                         </div>
 
                         <div>
-                            <label htmlFor="Longitude" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Longitude:</label>
+                            <label htmlFor="Longitude" className="block mb-2 text-sm font-medium text-gray-900 text-white">Longitude:</label>
                             <input type='text' id="" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Longitude: "  required />
                         </div>
                         <div>
-                            <label htmlFor="Latitude:" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Latitude::</label>
+                            <label htmlFor="Latitude:" className="block mb-2 text-sm font-medium text-gray-900 text-white">Latitude::</label>
                             <input type='text' id="" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Latitude:: "  required />
                         </div>
                         <div>
-                            <label htmlFor="Description::" className="block  text-sm font-medium text-gray-900 dark:text-white">Description:</label>
+                            <label htmlFor="Description::" className="block  text-sm font-medium text-gray-900 text-white">Description:</label>
                             <textarea  id="" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Description: "  required />
                         </div>
 
@@ -60,7 +60,7 @@ const Branch = () => {
 
                 </form>
 
-                <div className="relative overflow-x-auto shadow-md ">
+                <div className="relative overflow-x-auto shadow-md mb-10">
                     <table className="w-full text-sm  text-gray-500 ">
                         <thead className="text-xs text-white uppercase  bg-amber-600 ">
                         <tr>

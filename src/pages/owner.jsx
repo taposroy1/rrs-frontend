@@ -81,7 +81,7 @@ const Owner = ({children}) => {
                         </NavLink>
                     ))
                 }
-                <span className='mt-96'>Logout</span>
+
 
             </div>
 
