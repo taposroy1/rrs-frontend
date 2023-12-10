@@ -1,9 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Owner from "../../pages/owner.jsx";
 import img5 from '../../assets/img/placeholder-600x400.webp'
 
+
 const Gallery = () => {
     return (
+
         <div className='bg-[#0D0B2A]'>
             <Owner>
                 <div className="grid grid-cols-2 gap-4 bg-[#161B3B] text-white pb-5 pl-3 pt-5 rounded-lg mb-10">
@@ -23,6 +25,7 @@ const Gallery = () => {
                     <div>
                         <h2 className=''> Imag Upload</h2>
                           <input type='file' className='mt-2'/>
+                         
                     </div>
                 </div>
                <div className='bg-[#161B3B] p-5 rounded-lg'>

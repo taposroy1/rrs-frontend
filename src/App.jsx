@@ -1,8 +1,10 @@
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import {BrowserRouter, Routes, Route, Navigate} from 'react-router-dom'
 import HomePage from './pages/home-page'
 import LoginPage from './pages/login-page'
 import VerifyPage from './pages/verify-page'
 import RegisterPage from './pages/register-page'
+
+//Owner
 import Reservation from "./components/RestaurantOwner/Reservation.jsx";
 import Owner from "./pages/owner.jsx";
 import ProfileSetup from "./components/RestaurantOwner/ProfileSetup.jsx";
@@ -13,6 +15,11 @@ import Dashboard from "./components/RestaurantOwner/Dashboard.jsx";
 import Menus from "./components/RestaurantOwner/Menus.jsx";
 import Reports from "./components/RestaurantOwner/Reports.jsx";
 import SetupTable from "./components/RestaurantOwner/SetupTable.jsx";
+
+//User
+import MyOrders from "./components/RestaurantUser/MyOrders.jsx";
+import MyReviews from "./components/RestaurantUser/MyReviews.jsx";
+import Settings from "./components/RestaurantUser/Settings.jsx";
 
 
 function App() {
@@ -36,7 +43,13 @@ function App() {
         <Route path="/profileSetup" element={<ProfileSetup/>} />
         <Route path="/branch" element={<Branch/>} />
         <Route path="/gallery" element={<Gallery/>} />
-        <Route path="/setup Table" element={<SetupTable/>} />
+        <Route path="/setup Table" element={<SetupTable/>}/>
+
+        //Restaurant User page
+        <Route path="/" element={<Navigate to="/dashboard" element={<Dashboard />} />}/>
+        <Route path="/myorders" element={<MyOrders/>} />
+        <Route path="/My_Reviews" element={<MyReviews/>} />
+        <Route path="/settings" element={<Settings />} />
 
 
       </Routes>

@@ -7,7 +7,7 @@ const Branch = () => {
         <div className='bg-[#0D0B2A]'>
             <Owner>
 
-                <form className='bg-blue-200 bg-[#161B3B] text-white mb-3 rounded-lg'>
+                <form className=' bg-[#161B3B] text-white mb-3 rounded-lg  '>
                     <div className="grid gap-6 mb-6 md:grid-cols-2 p-10">
                         <div>
                             <label  className="block mb-2 text-sm font-medium text-gray-900 text-white">Branch Name</label>
